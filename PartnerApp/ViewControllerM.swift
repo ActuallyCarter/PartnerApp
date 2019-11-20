@@ -37,7 +37,7 @@ class ViewControllerM: UIViewController {
     
     @IBOutlet weak var Tile15: UIButton!
     @IBOutlet weak var Tile16: UIButton!
-    var Names = ["Pete Dunaghy", "", "","","","Chris Walter","Ian Althouse",""]
+    var Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,9 +49,9 @@ class ViewControllerM: UIViewController {
         print("the word")
         
         if sender.alpha == CGFloat(1.0){
-        sender.alpha = 0.0
+        sender.alpha = 0.1
         }
-        else if sender.alpha == CGFloat(0.0) {
+        else {
             sender.alpha = 1.0
         }
         
