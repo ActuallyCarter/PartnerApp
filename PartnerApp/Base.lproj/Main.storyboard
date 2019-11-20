@@ -28,15 +28,15 @@
                                                     <constraint firstAttribute="width" constant="85" id="pMz-UY-Xso"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jackson" translatesAutoresizingMaskIntoConstraints="NO" id="uNF-UK-27A">
-                                                <rect key="frame" x="97" y="0.0" width="85" height="85"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jeffrey Jackson" translatesAutoresizingMaskIntoConstraints="NO" id="uNF-UK-27A">
+                                                <rect key="frame" x="97" y="0.0" width="85" height="85.000000000000114"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="1i5-LP-rb0"/>
                                                     <constraint firstAttribute="height" constant="85" id="O2r-AA-lR8"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pete Dunaghy" translatesAutoresizingMaskIntoConstraints="NO" id="xg1-hU-wFR">
-                                                <rect key="frame" x="194" y="0.0" width="85" height="85"/>
+                                                <rect key="frame" x="194" y="0.0" width="85" height="85.000000000000028"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="85" id="TQC-Yu-ehz"/>
                                                     <constraint firstAttribute="height" constant="85" id="hUw-dl-4ea"/>
@@ -381,6 +381,22 @@
                         <outlet property="Tile7" destination="cu4-QC-N59" id="U8A-mZ-fJ0"/>
                         <outlet property="Tile8" destination="aYo-vi-Dmj" id="sjw-np-3uY"/>
                         <outlet property="Tile9" destination="blE-OE-9xs" id="VfD-Hz-JiL"/>
+                        <outlet property="imageTile1" destination="R7a-DI-ZVm" id="kBc-xb-KqH"/>
+                        <outlet property="imageTile10" destination="8M1-u9-Pq0" id="2zp-Wb-waZ"/>
+                        <outlet property="imageTile11" destination="TTu-ST-65E" id="lkR-Ih-b67"/>
+                        <outlet property="imageTile12" destination="xge-b2-cEC" id="osN-i4-Q30"/>
+                        <outlet property="imageTile13" destination="AVO-C8-pEr" id="bT8-3P-ikM"/>
+                        <outlet property="imageTile14" destination="EnV-0J-V0e" id="xt5-gU-ejo"/>
+                        <outlet property="imageTile15" destination="tW9-ED-cFs" id="xJX-B0-kAn"/>
+                        <outlet property="imageTile16" destination="03m-8a-ST8" id="bu3-Ny-tHp"/>
+                        <outlet property="imageTile2" destination="uNF-UK-27A" id="Fpx-I6-LMy"/>
+                        <outlet property="imageTile3" destination="xg1-hU-wFR" id="qld-dz-fMv"/>
+                        <outlet property="imageTile4" destination="2xu-aq-WDq" id="yG7-cy-0r6"/>
+                        <outlet property="imageTile5" destination="CPi-Aj-XrC" id="1NE-Ri-nFi"/>
+                        <outlet property="imageTile6" destination="smr-pW-ONE" id="lk3-7l-a95"/>
+                        <outlet property="imageTile7" destination="RtM-b1-so7" id="n2A-Ym-EHu"/>
+                        <outlet property="imageTile8" destination="dKp-ur-3Fb" id="M5o-Qt-kf4"/>
+                        <outlet property="imageTile9" destination="83s-lL-AqZ" id="XNB-SY-av6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAY-NS-fXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -494,7 +510,7 @@
     </scenes>
     <resources>
         <image name="Chris Walter" width="201" height="290"/>
-        <image name="Jackson" width="487" height="561"/>
+        <image name="Jeffrey Jackson" width="487" height="561"/>
         <image name="Pete Dunaghy" width="216" height="161"/>
     </resources>
 </document>
