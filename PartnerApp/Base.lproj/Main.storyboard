@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View ControllerM-->
         <scene sceneID="klR-MF-D3x">
             <objects>
-                <viewController id="rAU-uu-HhW" sceneMemberID="viewController">
+                <viewController id="rAU-uu-HhW" customClass="ViewControllerM" customModule="PartnerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFw-E2-51E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,6 +28,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="2Z8-FO-Uef"/>
                                                     <constraint firstAttribute="width" constant="85" id="j0c-vA-qzH"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="R2a-BO-aCw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ad-kg-wKZ">
                                                 <rect key="frame" x="97" y="0.0" width="85" height="85"/>
@@ -36,6 +39,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="9Pe-QS-xR6"/>
                                                     <constraint firstAttribute="height" constant="85" id="mAr-wU-Bff"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="76q-ms-7bd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shs-Yn-d5j">
                                                 <rect key="frame" x="194" y="0.0" width="85" height="85"/>
@@ -44,6 +50,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="6Ub-Rs-ptJ"/>
                                                     <constraint firstAttribute="height" constant="85" id="yAj-MC-z6d"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="QFS-BN-khq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRT-fu-bFb">
                                                 <rect key="frame" x="291" y="0.0" width="85" height="85"/>
@@ -52,6 +61,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="O9r-Ki-A9x"/>
                                                     <constraint firstAttribute="height" constant="85" id="hYX-M9-rZU"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="AK4-Bd-GEV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -65,6 +77,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="IfK-PH-5OO"/>
                                                     <constraint firstAttribute="height" constant="85" id="aX0-Dg-VU2"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="nDD-xM-dPy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSB-NJ-Hkb">
                                                 <rect key="frame" x="97" y="0.0" width="85" height="85"/>
@@ -73,6 +88,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="jUc-Bf-s2B"/>
                                                     <constraint firstAttribute="height" constant="85" id="tKe-Kc-dpC"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="qbH-e0-nf6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu4-QC-N59">
                                                 <rect key="frame" x="194" y="0.0" width="85" height="85"/>
@@ -81,6 +99,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="5fY-Ua-noV"/>
                                                     <constraint firstAttribute="height" constant="85" id="ZUh-9y-Fyc"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="riQ-zd-ozj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYo-vi-Dmj">
                                                 <rect key="frame" x="291" y="0.0" width="85" height="85"/>
@@ -89,6 +110,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="P5Y-1x-baw"/>
                                                     <constraint firstAttribute="height" constant="85" id="opP-xH-Kyr"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="CHG-EC-EzX"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -102,6 +126,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="A7m-Ur-csN"/>
                                                     <constraint firstAttribute="width" constant="85" id="Wms-g9-FGe"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="tkt-NI-Wge"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGr-xD-cit">
                                                 <rect key="frame" x="97" y="0.0" width="85" height="85"/>
@@ -110,6 +137,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="W7n-2g-TpY"/>
                                                     <constraint firstAttribute="width" constant="85" id="YPW-oL-mfb"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="BFG-GO-VTH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPU-cR-G4N">
                                                 <rect key="frame" x="194" y="0.0" width="85" height="85"/>
@@ -118,6 +148,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="x8i-vD-9Jy"/>
                                                     <constraint firstAttribute="width" constant="85" id="xdW-vh-Pkn"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="CtB-fu-sfH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcT-RX-jND">
                                                 <rect key="frame" x="291" y="0.0" width="85" height="85"/>
@@ -126,6 +159,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="8kc-Dh-3kV"/>
                                                     <constraint firstAttribute="width" constant="85" id="yZx-ir-mTh"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="CoG-Rx-AQP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -139,6 +175,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="fp2-CH-uLh"/>
                                                     <constraint firstAttribute="width" constant="85" id="rPD-M3-fvi"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="a5s-Hh-e0H"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JA4-81-7Ak">
                                                 <rect key="frame" x="97" y="0.0" width="85" height="85"/>
@@ -147,6 +186,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="V7M-qC-95e"/>
                                                     <constraint firstAttribute="width" constant="85" id="fE5-qk-To6"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="6IY-2l-JuH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wb-dW-g8M">
                                                 <rect key="frame" x="194" y="0.0" width="85" height="85"/>
@@ -155,6 +197,9 @@
                                                     <constraint firstAttribute="width" constant="85" id="3Ij-o7-Mwi"/>
                                                     <constraint firstAttribute="height" constant="85" id="fLx-gp-dt6"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="aid-zW-3Bb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ0-3G-3LD">
                                                 <rect key="frame" x="291" y="0.0" width="85" height="85"/>
@@ -163,6 +208,9 @@
                                                     <constraint firstAttribute="height" constant="85" id="36n-3G-3zr"/>
                                                     <constraint firstAttribute="width" constant="85" id="emj-Ne-zgu"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="tilePressed:" destination="rAU-uu-HhW" eventType="touchUpInside" id="6WH-Xc-T05"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -173,6 +221,24 @@
                         <viewLayoutGuide key="safeArea" id="0Ha-Q7-mai"/>
                     </view>
                     <navigationItem key="navigationItem" id="JM2-ur-oUh"/>
+                    <connections>
+                        <outlet property="Tile1" destination="mvM-uK-2TK" id="787-Fr-w21"/>
+                        <outlet property="Tile10" destination="WGr-xD-cit" id="QjU-5e-SfE"/>
+                        <outlet property="Tile11" destination="aPU-cR-G4N" id="zTi-m6-Wdm"/>
+                        <outlet property="Tile12" destination="TcT-RX-jND" id="sBF-U3-EmS"/>
+                        <outlet property="Tile13" destination="2y6-cf-Afr" id="qqm-ef-xZm"/>
+                        <outlet property="Tile14" destination="JA4-81-7Ak" id="yMM-SU-xV9"/>
+                        <outlet property="Tile15" destination="2wb-dW-g8M" id="pnl-jb-Myo"/>
+                        <outlet property="Tile16" destination="cZ0-3G-3LD" id="KCM-Yd-Iay"/>
+                        <outlet property="Tile2" destination="3ad-kg-wKZ" id="jNM-hw-Dbh"/>
+                        <outlet property="Tile3" destination="shs-Yn-d5j" id="TOu-GP-T33"/>
+                        <outlet property="Tile4" destination="XRT-fu-bFb" id="KxJ-aO-Dyn"/>
+                        <outlet property="Tile5" destination="Nd0-BZ-ZXl" id="uju-Br-YNJ"/>
+                        <outlet property="Tile6" destination="DSB-NJ-Hkb" id="tpn-vL-uNF"/>
+                        <outlet property="Tile7" destination="cu4-QC-N59" id="U8A-mZ-fJ0"/>
+                        <outlet property="Tile8" destination="aYo-vi-Dmj" id="sjw-np-3uY"/>
+                        <outlet property="Tile9" destination="blE-OE-9xs" id="VfD-Hz-JiL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAY-NS-fXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
