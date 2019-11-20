@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewControllerD: UIViewController {
-    let Names = ["Pete Dunaghy", "", "","","","Chris Walter","Ian Althouse",""]
+    let Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
