@@ -46,9 +46,14 @@ class ViewControllerM: UIViewController {
     
     @IBAction func tilePressed(_ sender: UIButton) {
         
+        print("the word")
         
-        
-        
+        if sender.alpha == CGFloat(1.0){
+        sender.alpha = 0.0
+        }
+        else if sender.alpha == CGFloat(0.0) {
+            sender.alpha = 1.0
+        }
         
     }
     
