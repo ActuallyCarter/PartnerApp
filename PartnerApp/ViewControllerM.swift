@@ -69,7 +69,7 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var Tile15: UIButton!
     @IBOutlet weak var Tile16: UIButton!
     var counter = 0
-    var Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
+    var Names = ["Pete Dunaghy","pete dunaghy-1", "Michal Fien", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +93,14 @@ class ViewControllerM: UIViewController {
         }
         
     }
+    
+    func startUp(){
+        
+        for i in Names{
+            
+        }
+    }
+    
     func setToDefault() {
         
         Tile1.alpha = 1.0
