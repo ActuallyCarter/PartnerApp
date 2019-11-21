@@ -41,6 +41,8 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var imageTile16: UIImageView!
     @IBOutlet weak var imageTile15: UIImageView!
     
+    var myImageViews: [UIImageView] = []
+    
     @IBOutlet weak var Tile1: UIButton!
     
     @IBOutlet weak var Tile2: UIButton!
@@ -73,7 +75,7 @@ class ViewControllerM: UIViewController {
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myImageViews.append(imageTile1)
         // for mem game use two layers of views, set alphas
     }
     
@@ -97,7 +99,8 @@ class ViewControllerM: UIViewController {
     func startUp(){
         
         for i in Names{
-            
+           
+            imageTile1.image = UIImage(named: "\(i)")
         }
     }
     
