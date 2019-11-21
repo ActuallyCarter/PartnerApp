@@ -70,6 +70,7 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var Tile16: UIButton!
     var counter = 0
     var Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
+    var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     override func viewDidLoad() {
         super.viewDidLoad()
 
