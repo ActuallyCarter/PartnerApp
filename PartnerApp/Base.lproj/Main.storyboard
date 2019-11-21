@@ -381,6 +381,22 @@
                         <outlet property="Tile7" destination="cu4-QC-N59" id="U8A-mZ-fJ0"/>
                         <outlet property="Tile8" destination="aYo-vi-Dmj" id="sjw-np-3uY"/>
                         <outlet property="Tile9" destination="blE-OE-9xs" id="VfD-Hz-JiL"/>
+                        <outlet property="imageTile1" destination="R7a-DI-ZVm" id="KgO-6d-aNt"/>
+                        <outlet property="imageTile10" destination="8M1-u9-Pq0" id="Xdr-VP-JwK"/>
+                        <outlet property="imageTile11" destination="TTu-ST-65E" id="0Ja-bx-RBg"/>
+                        <outlet property="imageTile12" destination="xge-b2-cEC" id="9Fe-DU-hIb"/>
+                        <outlet property="imageTile13" destination="AVO-C8-pEr" id="Wxs-DH-9pi"/>
+                        <outlet property="imageTile14" destination="EnV-0J-V0e" id="Cj4-gx-DhC"/>
+                        <outlet property="imageTile15" destination="03m-8a-ST8" id="g7i-sf-dfo"/>
+                        <outlet property="imageTile16" destination="tW9-ED-cFs" id="UdV-vk-Fez"/>
+                        <outlet property="imageTile2" destination="uNF-UK-27A" id="ec8-8N-IWs"/>
+                        <outlet property="imageTile3" destination="xg1-hU-wFR" id="be8-q9-4yX"/>
+                        <outlet property="imageTile4" destination="2xu-aq-WDq" id="8jv-O2-pAl"/>
+                        <outlet property="imageTile5" destination="CPi-Aj-XrC" id="ddu-J4-kgI"/>
+                        <outlet property="imageTile6" destination="smr-pW-ONE" id="ruX-KQ-m2S"/>
+                        <outlet property="imageTile7" destination="RtM-b1-so7" id="qba-0I-Aqe"/>
+                        <outlet property="imageTile8" destination="dKp-ur-3Fb" id="zm9-hR-0Bq"/>
+                        <outlet property="imageTile9" destination="83s-lL-AqZ" id="PYC-bw-7Xv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TAY-NS-fXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

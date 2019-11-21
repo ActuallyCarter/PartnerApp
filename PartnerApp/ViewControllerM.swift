@@ -68,6 +68,7 @@ class ViewControllerM: UIViewController {
     
     @IBOutlet weak var Tile15: UIButton!
     @IBOutlet weak var Tile16: UIButton!
+    var counter = 0
     var Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,6 +83,7 @@ class ViewControllerM: UIViewController {
         if sender.alpha == CGFloat(1.0) && counter < 2{
         sender.alpha = 0.02
         counter = counter + 1
+           
         print("the word")
         }
         else if counter == 2{
@@ -91,6 +93,7 @@ class ViewControllerM: UIViewController {
         
     }
     func setToDefault() {
+        
         Tile1.alpha = 1.0
         Tile2.alpha = 1.0
         Tile3.alpha = 1.0
