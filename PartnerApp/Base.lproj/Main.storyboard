@@ -465,7 +465,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-W2-AHa">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-W2-AHa">
                                 <rect key="frame" x="24" y="188" width="366" height="116"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-Qd-Ssf">
@@ -522,6 +522,12 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kFD-qc-Quc" firstAttribute="bottom" secondItem="fUc-W2-AHa" secondAttribute="bottom" constant="558" id="IRs-BG-ynk"/>
+                            <constraint firstItem="fUc-W2-AHa" firstAttribute="top" secondItem="kFD-qc-Quc" secondAttribute="top" constant="100" id="YRi-VA-rdQ"/>
+                            <constraint firstItem="fUc-W2-AHa" firstAttribute="leading" secondItem="kFD-qc-Quc" secondAttribute="leading" constant="24" id="bi7-Lb-taa"/>
+                            <constraint firstItem="kFD-qc-Quc" firstAttribute="trailing" secondItem="fUc-W2-AHa" secondAttribute="trailing" constant="24" id="hcC-gR-fl7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="kFD-qc-Quc"/>
                     </view>
                     <navigationItem key="navigationItem" id="elD-kg-6FH"/>
