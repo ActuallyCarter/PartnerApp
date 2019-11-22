@@ -142,9 +142,10 @@ class ViewControllerM: UIViewController {
         for p in 0...15 {
             if buttons[p].tag == 1{
                 myImageViews2[p].tag = 1
+                print("yes")
             }
         }
-        sender.tag = 0
+        
         
         if sender.alpha == CGFloat(1.0) && counter < 2{
         sender.alpha = 0.02
@@ -152,30 +153,50 @@ class ViewControllerM: UIViewController {
            
 //        print("the word")
         }
-        else if counter == 2{
-           setToDefault()
-            counter = 0
-        }
+    
         
-        if counter == 1{
+        else if counter == 2{
+            
+            counter = 0
             for l in myImageViews2{
                 if l.tag == 1{
                     Compare.append(l)
                 }
                 
             }
-            for f in Names{
+            for f in Names2{
                 if Compare[0].image == UIImage(named: "\(f)"){
                     compare2.append(f)
+                   
+                   
+                    
                 }
                 if Compare[1].image == UIImage(named: "\(f)"){
                     compare2.append(f)
+                    
                 }
             }
             
-//            if compare2[0]
-            
-            
+            if compare2[0] == compare2[1].lowercased() + "-1" || compare2[1] == compare2[0].lowercased() + "-1" {
+                for k in buttons{
+                    if k.tag == 1{
+                        k.isEnabled = false
+                        print("???")
+                    }
+                }
+                
+                
+                
+            }
+            else {
+                 print(compare2[0])
+                compare2.removeAll()
+                Compare.removeAll()
+                //make reset function that resets all tags, arrays back to normal
+                 
+            }
+
+         setToDefault()
         }
         
         
@@ -202,7 +223,8 @@ class ViewControllerM: UIViewController {
             }
             
         }
-
+      
+        
     }
     
     /*
