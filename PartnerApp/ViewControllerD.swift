@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewControllerD: UIViewController {
-    let Names = ["Pete Dunaghy", "Michal Fien", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
+    let Names = ["Pete Dunaghy", "Michal Fein", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
