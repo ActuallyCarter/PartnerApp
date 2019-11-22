@@ -10,6 +10,7 @@ import UIKit
 
 class ViewControllerD: UIViewController {
     let Names = ["Pete Dunaghy", "Michal Fein", "Meghan Gerber","Megan Malligan","Victoria Pollard","Chris Walter","Ian Althouse","Jeffrey Jackson"]
+    let Stats = ["Name: Pete Dunaghy\nYears At Haverford High: 400\nRole In School: Trendy Principal", "Name: Michal Fein\nYears At Haverford High: 10\nRole In School: Digital Musician", "Name: Meghan Gerber\nYears At Haverford High: 12\nRole In School: Digital Musician"]
     @IBOutlet weak var Button1: UIButton!
     @IBOutlet weak var Button2: UIButton!
     @IBOutlet weak var Button3: UIButton!
@@ -52,7 +53,7 @@ class ViewControllerD: UIViewController {
         if Staff == "\(Names[Identifier])"
         {
             TeacherImage.image = UIImage(named: "\(Names[Identifier])")
-            TeacherStats.text = "\(Names[Identifier])"
+            TeacherStats.text = "\(Stats[Identifier])"
             Identifier = 0
         }
         else
