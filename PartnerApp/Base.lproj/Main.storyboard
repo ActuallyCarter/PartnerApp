@@ -465,78 +465,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-W2-AHa">
-                                <rect key="frame" x="24" y="188" width="366" height="116"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-W2-AHa">
+                                <rect key="frame" x="24" y="138" width="366" height="674"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-Qd-Ssf">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="0.0"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jX8-Qd-Ssf">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-tu-Agw">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmK-tu-Agw">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="42.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="db5-mr-ovn"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-4S-qwj">
-                                                <rect key="frame" x="297" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-4S-qwj">
+                                                <rect key="frame" x="297" y="0.0" width="69" height="42.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="AvT-Md-iaW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2Wi-aJ-iDz">
-                                        <rect key="frame" x="0.0" y="34" width="366" height="0.0"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2Wi-aJ-iDz">
+                                        <rect key="frame" x="0.0" y="76.5" width="366" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azu-UF-iSw">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlC-ax-tqZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="Shl-6A-tRa"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsC-ab-QHj">
-                                                <rect key="frame" x="297" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wu-hf-zc8">
+                                                <rect key="frame" x="297" y="0.0" width="69" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="n6J-LS-mN1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-6L-xst">
-                                        <rect key="frame" x="0.0" y="68" width="366" height="0.0"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Prg-6L-xst">
+                                        <rect key="frame" x="0.0" y="153.5" width="366" height="42.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jK-vG-9lV">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jK-vG-9lV">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="42.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="A4H-E2-sb2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-m0-f3u">
-                                                <rect key="frame" x="297" y="0.0" width="69" height="0.0"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-m0-f3u">
+                                                <rect key="frame" x="297" y="0.0" width="69" height="42.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="9iE-A2-Ky7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TEx-7K-8Tx">
-                                        <rect key="frame" x="0.0" y="102" width="366" height="14"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TEx-7K-8Tx">
+                                        <rect key="frame" x="0.0" y="230" width="366" height="43"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mh-bW-a9F">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="14"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mh-bW-a9F">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="cdA-gr-za7"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-1u-icB">
-                                                <rect key="frame" x="297" y="0.0" width="69" height="14"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIZ-1u-icB">
+                                                <rect key="frame" x="297" y="0.0" width="69" height="43"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="TeacherSelect:" destination="56r-cd-gEr" eventType="touchUpInside" id="7AX-yn-0bi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xg9-xI-d3S">
+                                        <rect key="frame" x="0.0" y="307" width="366" height="233"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="Cs5-QA-ATe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLl-RS-XP4">
+                                        <rect key="frame" x="0.0" y="574" width="366" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="kes-EE-VzG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kFD-qc-Quc" firstAttribute="bottom" secondItem="fUc-W2-AHa" secondAttribute="bottom" constant="558" id="IRs-BG-ynk"/>
-                            <constraint firstItem="fUc-W2-AHa" firstAttribute="top" secondItem="kFD-qc-Quc" secondAttribute="top" constant="100" id="YRi-VA-rdQ"/>
-                            <constraint firstItem="fUc-W2-AHa" firstAttribute="leading" secondItem="kFD-qc-Quc" secondAttribute="leading" constant="24" id="bi7-Lb-taa"/>
-                            <constraint firstItem="kFD-qc-Quc" firstAttribute="trailing" secondItem="fUc-W2-AHa" secondAttribute="trailing" constant="24" id="hcC-gR-fl7"/>
+                            <constraint firstItem="kFD-qc-Quc" firstAttribute="bottom" secondItem="fUc-W2-AHa" secondAttribute="bottom" constant="50" id="3VI-IR-Sq9"/>
+                            <constraint firstItem="fUc-W2-AHa" firstAttribute="leading" secondItem="kFD-qc-Quc" secondAttribute="leading" constant="24" id="9xK-z8-4o4"/>
+                            <constraint firstItem="kFD-qc-Quc" firstAttribute="trailing" secondItem="fUc-W2-AHa" secondAttribute="trailing" constant="24" id="E6m-aK-toT"/>
+                            <constraint firstItem="fUc-W2-AHa" firstAttribute="top" secondItem="kFD-qc-Quc" secondAttribute="top" constant="50" id="kx8-dP-GlI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kFD-qc-Quc"/>
                     </view>
@@ -544,12 +583,14 @@
                     <connections>
                         <outlet property="Button1" destination="QmK-tu-Agw" id="O9i-6a-muJ"/>
                         <outlet property="Button2" destination="Pmg-4S-qwj" id="gdj-Ot-8zJ"/>
-                        <outlet property="Button3" destination="Azu-UF-iSw" id="jba-iv-GkT"/>
-                        <outlet property="Button4" destination="WsC-ab-QHj" id="hif-24-Igz"/>
+                        <outlet property="Button3" destination="mlC-ax-tqZ" id="yKc-GM-TSg"/>
+                        <outlet property="Button4" destination="4Wu-hf-zc8" id="gAD-UF-IUN"/>
                         <outlet property="Button5" destination="5jK-vG-9lV" id="XI2-pl-JXY"/>
                         <outlet property="Button6" destination="4fx-m0-f3u" id="389-gW-Hyk"/>
                         <outlet property="Button7" destination="6Mh-bW-a9F" id="MJF-qu-zxR"/>
                         <outlet property="Button8" destination="MIZ-1u-icB" id="YWs-t5-iUD"/>
+                        <outlet property="TeacherImage" destination="Xg9-xI-d3S" id="XUp-ul-adJ"/>
+                        <outlet property="TeacherStats" destination="hLl-RS-XP4" id="hXQ-DM-aaW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbY-eh-fa3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
