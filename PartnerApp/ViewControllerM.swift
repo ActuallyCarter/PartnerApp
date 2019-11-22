@@ -75,7 +75,25 @@ class ViewControllerM: UIViewController {
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         myImageViews.append(imageTile1)
+        myImageViews.append(imageTile2)
+        myImageViews.append(imageTile3)
+        myImageViews.append(imageTile4)
+        myImageViews.append(imageTile5)
+        myImageViews.append(imageTile6)
+        myImageViews.append(imageTile7)
+        myImageViews.append(imageTile8)
+        myImageViews.append(imageTile9)
+        myImageViews.append(imageTile10)
+        myImageViews.append(imageTile11)
+        myImageViews.append(imageTile12)
+        myImageViews.append(imageTile13)
+        myImageViews.append(imageTile14)
+        myImageViews.append(imageTile15)
+        myImageViews.append(imageTile16)
+        startUp()
         // for mem game use two layers of views, set alphas
     }
     
@@ -97,10 +115,14 @@ class ViewControllerM: UIViewController {
     }
     
     func startUp(){
+        for n in myImageViews{
+            
         
-        for i in Names{
-           
-            imageTile1.image = UIImage(named: "\(i)")
+            var rand = Int.random(in: 0...Names.count - 1)
+            n.image = UIImage(named: "\(Names[rand])")
+            Names.remove(at: rand)
+            
+        
         }
     }
     
