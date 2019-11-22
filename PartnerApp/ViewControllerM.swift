@@ -42,7 +42,8 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var imageTile15: UIImageView!
     
     var myImageViews: [UIImageView] = []
-    
+    var myImageViews2: [UIImageView] = []
+    var Compare: [UIImageView] = []
     @IBOutlet weak var Tile1: UIButton!
     
     @IBOutlet weak var Tile2: UIButton!
@@ -72,11 +73,31 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var Tile16: UIButton!
     var counter = 0
     var Names = ["Pete Dunaghy","pete dunaghy-1", "Michal Fien", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var Names2 = ["Pete Dunaghy","pete dunaghy-1", "Michal Fien", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var compare2: [String] = []
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
+    var buttons: [UIButton] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        buttons.append(Tile1)
+        buttons.append(Tile2)
+        buttons.append(Tile3)
+        buttons.append(Tile4)
+        buttons.append(Tile5)
+        buttons.append(Tile6)
+        buttons.append(Tile7)
+        buttons.append(Tile8)
+        buttons.append(Tile9)
+        buttons.append(Tile10)
+        buttons.append(Tile11)
+        buttons.append(Tile12)
+        buttons.append(Tile13)
+        buttons.append(Tile14)
+        buttons.append(Tile15)
+        buttons.append(Tile16)
+    
+        
         myImageViews.append(imageTile1)
         myImageViews.append(imageTile2)
         myImageViews.append(imageTile3)
@@ -93,24 +114,70 @@ class ViewControllerM: UIViewController {
         myImageViews.append(imageTile14)
         myImageViews.append(imageTile15)
         myImageViews.append(imageTile16)
+        
+        myImageViews2.append(imageTile1)
+        myImageViews2.append(imageTile2)
+        myImageViews2.append(imageTile3)
+        myImageViews2.append(imageTile4)
+        myImageViews2.append(imageTile5)
+        myImageViews2.append(imageTile6)
+        myImageViews2.append(imageTile7)
+        myImageViews2.append(imageTile8)
+        myImageViews2.append(imageTile9)
+        myImageViews2.append(imageTile10)
+        myImageViews2.append(imageTile11)
+        myImageViews2.append(imageTile12)
+        myImageViews2.append(imageTile13)
+        myImageViews2.append(imageTile14)
+        myImageViews2.append(imageTile15)
+        myImageViews2.append(imageTile16)
         startUp()
         // for mem game use two layers of views, set alphas
     }
     
     @IBAction func tilePressed(_ sender: UIButton) {
         
-        print("pressed")
+//        print("pressed")
+        sender.tag = 1
+        for p in 0...15 {
+            if buttons[p].tag == 1{
+                myImageViews2[p].tag = 1
+            }
+        }
+        sender.tag = 0
         
         if sender.alpha == CGFloat(1.0) && counter < 2{
         sender.alpha = 0.02
         counter = counter + 1
            
-        print("the word")
+//        print("the word")
         }
         else if counter == 2{
            setToDefault()
             counter = 0
         }
+        
+        if counter == 1{
+            for l in myImageViews2{
+                if l.tag == 1{
+                    Compare.append(l)
+                }
+                
+            }
+            for f in Names{
+                if Compare[0].image == UIImage(named: "\(f)"){
+                    compare2.append(f)
+                }
+                if Compare[1].image == UIImage(named: "\(f)"){
+                    compare2.append(f)
+                }
+            }
+            
+//            if compare2[0]
+            
+            
+        }
+        
         
     }
     
@@ -128,22 +195,13 @@ class ViewControllerM: UIViewController {
     
     func setToDefault() {
         
-        Tile1.alpha = 1.0
-        Tile2.alpha = 1.0
-        Tile3.alpha = 1.0
-        Tile4.alpha = 1.0
-        Tile5.alpha = 1.0
-        Tile6.alpha = 1.0
-        Tile7.alpha = 1.0
-        Tile8.alpha = 1.0
-        Tile9.alpha = 1.0
-        Tile10.alpha = 1.0
-        Tile11.alpha = 1.0
-        Tile12.alpha = 1.0
-        Tile13.alpha = 1.0
-        Tile14.alpha = 1.0
-        Tile15.alpha = 1.0
-        Tile16.alpha = 1.0
+        for i in buttons {
+            
+            if i.isEnabled == true{
+                i.alpha = 1.0
+            }
+            
+        }
 
     }
     
