@@ -72,8 +72,8 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var Tile15: UIButton!
     @IBOutlet weak var Tile16: UIButton!
     var counter = 0
-    var Names = ["Pete Dunaghy","pete dunaghy-1", "Michal Fein", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
-    var Names2 = ["Pete Dunaghy","pete dunaghy-1", "Michal Fein", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var Names = ["Pete Dunaghy","pete dunaghy-1", "Meghan Gerber","meghan gerber-1", "Michal Fein", "michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var Names2 = ["Pete Dunaghy","pete dunaghy-1", "Meghan Gerber","meghan gerber-1", "Michal Fein", "michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
     var compare2: [String] = []
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     var buttons: [UIButton] = []
@@ -139,7 +139,6 @@ class ViewControllerM: UIViewController {
         
 //        print("pressed")
 
-        
         
         if sender.alpha == CGFloat(1.0) && counter < 2{
         sender.alpha = 0.02
@@ -228,15 +227,17 @@ class ViewControllerM: UIViewController {
     }
     
     func Reset(){
+
         
-        compare2.removeAll()
-        Compare.removeAll()
         for o in myImageViews2{
             o.tag = 0
         }
         for b in buttons{
             b.tag = 0
         }
+        
+        compare2.removeAll()
+        Compare.removeAll()
     
     }
     
