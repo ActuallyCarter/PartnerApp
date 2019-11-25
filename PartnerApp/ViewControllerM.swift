@@ -72,8 +72,8 @@ class ViewControllerM: UIViewController {
     @IBOutlet weak var Tile15: UIButton!
     @IBOutlet weak var Tile16: UIButton!
     var counter = 0
-    var Names = ["Pete Dunaghy","pete dunaghy-1", "Michal Fien", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
-    var Names2 = ["Pete Dunaghy","pete dunaghy-1", "Michal Fien", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var Names = ["Pete Dunaghy","pete dunaghy-1", "Michal Fein", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
+    var Names2 = ["Pete Dunaghy","pete dunaghy-1", "Michal Fein", "Meghan Gerber","meghan gerber-1","michal fein-1","Megan Malligan","megan malligan-1","Victoria Pollard","victoria pollard-1","Chris Walter","chris walter-1","Ian Althouse","ian althouse-1","jeffrey jackson-1","Jeffrey Jackson"]
     var compare2: [String] = []
     var pics: [UIImage] = [UIImage(named: "Chris Walter")!]
     var buttons: [UIButton] = []
@@ -138,19 +138,22 @@ class ViewControllerM: UIViewController {
     @IBAction func tilePressed(_ sender: UIButton) {
         
 //        print("pressed")
-        sender.tag = 1
-        for p in 0...15 {
-            if buttons[p].tag == 1{
-                myImageViews2[p].tag = 1
-                print("yes")
-            }
-        }
+
         
         
         if sender.alpha == CGFloat(1.0) && counter < 2{
         sender.alpha = 0.02
         counter = counter + 1
            
+            
+            sender.tag = 1
+            for p in 0...15 {
+                if buttons[p].tag == 1{
+                    myImageViews2[p].tag = 1
+                    print("yes")
+                }
+            }
+
 //        print("the word")
         }
     
@@ -165,16 +168,13 @@ class ViewControllerM: UIViewController {
                 
             }
             for f in Names2{
-                if Compare[0].image == UIImage(named: "\(f)"){
+                if Compare[0].image == UIImage(named: "\(f)") || Compare[1].image == UIImage(named: "\(f)"){
                     compare2.append(f)
                    
                    
                     
                 }
-                if Compare[1].image == UIImage(named: "\(f)"){
-                    compare2.append(f)
-                    
-                }
+      
             }
             
             if compare2[0] == compare2[1].lowercased() + "-1" || compare2[1] == compare2[0].lowercased() + "-1" {
@@ -182,16 +182,16 @@ class ViewControllerM: UIViewController {
                     if k.tag == 1{
                         k.isEnabled = false
                         print("???")
+                        
                     }
                 }
-                
+                Reset()
                 
                 
             }
             else {
-                 print(compare2[0])
-                compare2.removeAll()
-                Compare.removeAll()
+                print(compare2[0])
+                Reset()
                 //make reset function that resets all tags, arrays back to normal
                  
             }
@@ -199,7 +199,7 @@ class ViewControllerM: UIViewController {
          setToDefault()
         }
         
-        
+       print(counter)
     }
     
     func startUp(){
@@ -225,6 +225,19 @@ class ViewControllerM: UIViewController {
         }
       
         
+    }
+    
+    func Reset(){
+        
+        compare2.removeAll()
+        Compare.removeAll()
+        for o in myImageViews2{
+            o.tag = 0
+        }
+        for b in buttons{
+            b.tag = 0
+        }
+    
     }
     
     /*
