@@ -146,9 +146,9 @@ class ViewControllerM: UIViewController {
            
             
             sender.tag = 1
-            for p in 0...15 {
-                if buttons[p].tag == 1{
-                    myImageViews2[p].tag = 1
+            for allButton in 0...15 {
+                if buttons[allButton].tag == 1{
+                    myImageViews2[allButton].tag = 1
                     print("yes")
                 }
             }
@@ -160,9 +160,9 @@ class ViewControllerM: UIViewController {
         else if counter == 2{
             
             counter = 0
-            for l in myImageViews2{
-                if l.tag == 1{
-                    Compare.append(l)
+            for Images in myImageViews2{
+                if Images.tag == 1{
+                    Compare.append(Images)
                 }
                 
             }
@@ -215,10 +215,10 @@ class ViewControllerM: UIViewController {
     
     func setToDefault() {
         
-        for i in buttons {
+        for NotMatchedButtons in buttons {
             
-            if i.isEnabled == true{
-                i.alpha = 1.0
+            if NotMatchedButtons.isEnabled == true{
+                NotMatchedButtons.alpha = 1.0
             }
             
         }
@@ -229,11 +229,11 @@ class ViewControllerM: UIViewController {
     func Reset(){
 
         
-        for o in myImageViews2{
-            o.tag = 0
+        for NotmatchedImages in myImageViews2{
+            NotmatchedImages.tag = 0
         }
-        for b in buttons{
-            b.tag = 0
+        for NotMatchedButtons in buttons{
+            NotMatchedButtons.tag = 0
         }
         
         compare2.removeAll()
